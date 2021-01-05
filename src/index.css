@@ -4,15 +4,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
+  font-family: pompiere;
+  src: url(./fonts/Pompiere-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
   font-family: spinnaker;
   src: url(./fonts/Spinnaker-Regular.ttf);
   font-weight: bold;
 }
 
 body {
+  background: rgb(255, 250, 242);
   margin: 0;
   font-family: 'spinnaker';
-
+  overflow-x: hidden;
+  color: rgb(39, 39, 39);
+  font: 1em/1.4 "spinnaker";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,3 +36,4 @@ border-radius: 5px;
 .home-name {
   font-size: 150px;
 }
+

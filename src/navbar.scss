@@ -13,16 +13,18 @@ span {
 }
 
 label {
+  color: #50C79B;
   float: right;
   margin: 5px;
   z-index: 1000;
-  margin-top: 10px;
+  margin-top: 18px;
   margin-bottom: 15px;
   padding: 0;
   border: none;
   outline: none;
-  background: none;
+  background:none;
   cursor: pointer;
+  
 
   &::before {
     float: right;
@@ -43,6 +45,10 @@ label {
     margin: 0;
     padding: 0;
     transition: opacity .5s $timing-function;
+    @media (max-width: 25em){
+      width: 1.5em;
+    height: 1.05em;
+    }
 
     &::before,
     .bar,
@@ -52,9 +58,14 @@ label {
       width: 100%;
       height: 12%;
       margin: 5px;
-      background: white;
+      background: #50C79B;
       content: '';
       transition: all .5s $timing-function;
+      @media (max-width: 25em){
+        margin: 3px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
     }
 
     .bar {
@@ -81,6 +92,7 @@ label:hover {
 }
 
 nav {
+  color: white;
   position: fixed;
   top: 0;
   left: 100%;
@@ -172,10 +184,14 @@ main {
 
       &::before {
         transform: rotate(45deg) translateY(-75%);
+        background: white;
+
       }
 
       &::after {
         transform: rotate(-45deg) translateY(75%);
+        background: white;
+
       }
 
       .bar {
@@ -224,12 +240,6 @@ main {
 }
 
 /* misc */
-body {
-  overflow-x: hidden;
-  background: rgb(255, 247, 235);
-  color: white;
-  font: 1em/1.4 "spinnaker";
-}
 
 main {
   background: #3498db;
@@ -249,4 +259,40 @@ article {
 h1 {
   font: 2.5em/1.4 "roboto condensed";
   font-weight: 700;
+}
+
+.logo {
+  width: 27px;
+  height: 27px;
+  margin: 1%;
+  margin-top: 2%;
+  fill: #50C79B;
+  @media (max-width: 25em){
+    margin: 5%;
+    width: 20px;
+    height: 20px;
+    margin-left: 3%;
+  }
+}
+
+.logoContainer {
+  width: 100px;
+  height: 35px;
+  margin: 1%;
+  margin-top: 2%;
+  fill: #50C79B;
+  @media (max-width: 25em){
+    margin: 5%;
+    width: 75px;
+    margin-left: 3%;
+  }
+}
+
+.navTitle {
+  font-family: "pompiere";
+  margin: auto;
+  text-align: center;
+  @media (max-width: 25em){
+    font-size: 1.7em;
+  }
 }

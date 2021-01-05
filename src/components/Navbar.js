@@ -1,10 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import { ReactComponent as InstagramLogo } from "../icons/instagram.svg"
+import { ReactComponent as LinkedinLogo } from "../icons/linkedin.svg"
+import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
 export function Navbar() {
     return (
-        <header className="bg-red-600">
+        <header style={{ backgroundColor: "#fffaf2" }}>
             <div className="container mx-auto flex justify-between">
+                <div className="container flex justify-between logoContainer" >
+                    <InstagramLogo className="logo" fill="black" />
+                    <LinkedinLogo className="logo" fill="black" />
+                    <BehanceLogo className="logo" fill="black" /></div>
+                <h1 className="navTitle">Francesca Muià</h1>
                 <input type="checkbox" id="navcheck" role="button" title="menu" />
                 <label for="navcheck" aria-hidden="true" title="menu">
                     <span class="burger">
