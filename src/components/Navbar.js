@@ -8,9 +8,22 @@ export function Navbar() {
         <header style={{ backgroundColor: "#fffaf2" }}>
             <div className="mx-auto flex justify-between">
                 <div className="container flex justify-between logoContainer" >
-                    <InstagramLogo className="logo" fill="black" />
-                    <LinkedinLogo className="logo" fill="black" />
-                    <BehanceLogo className="logo" fill="black" /></div>
+                    <a href="https://www.instagram.com/effeemme_art/"
+                        className="logo" target="_blank" rel="noreferrer">
+                        <InstagramLogo className="logo" fill="black" />
+
+                    </a>
+                    <a href="https://www.linkedin.com/in/francesca-mui%C3%A0-6135ba175/"
+                        className="logo" target="_blank" rel="noreferrer">
+                        <LinkedinLogo className="logo" fill="black" />
+
+                    </a>
+                    <a href=""
+                        className="logo" target="_blank" rel="noreferrer">
+                        <BehanceLogo className="logo" fill="black" />
+
+                    </a>
+                </div>
                 <h1 className="navTitle">Francesca Muià</h1>
                 <input type="checkbox" id="navcheck" role="button" title="menu" />
                 <label for="navcheck" aria-hidden="true" title="menu">
