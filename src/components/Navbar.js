@@ -5,7 +5,7 @@ import { ReactComponent as LinkedinLogo } from "../icons/linkedin.svg"
 import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
 export function Navbar() {
     return (
-        <header style={{ backgroundColor: "#fffaf2" }}>
+        <header className="navHeader" style={{ backgroundColor: "#fffaf2", position: "fixed", zIndex: 1000, width: "100%" }}>
             <div className="mx-auto flex justify-between">
                 <div className="container flex justify-between logoContainer" >
                     <a href="https://www.instagram.com/effeemme_art/"
