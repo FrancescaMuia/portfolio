@@ -21,9 +21,10 @@ label {
   padding: 0;
   border: none;
   outline: none;
-  background:none;
+  background: none;
   cursor: pointer;
-  @media (max-width: 25em){
+
+  @media (max-width: 25em) {
     margin-right: clamp(5px, -0.5%, 10px);
     margin-top: 5%;
   }
@@ -47,9 +48,10 @@ label {
     margin: 0;
     padding: 0;
     transition: opacity .5s $timing-function;
-    @media (max-width: 25em){
+
+    @media (max-width: 25em) {
       width: 1.20em;
-    height: 1.05em;
+      height: 1.05em;
     }
 
     &::before,
@@ -63,7 +65,8 @@ label {
       background: #50C79B;
       content: '';
       transition: all .5s $timing-function;
-      @media (max-width: 25em){
+
+      @media (max-width: 25em) {
         margin: 3px;
         margin-top: 3px;
         margin-bottom: 3px;
@@ -127,9 +130,10 @@ nav {
     @media(min-width: 45em) {
       width: $nav-width-desktop;
     }
+
     @media(max-width: 25em) {
-        width: $nav-width-mobile;
-      }
+      width: $nav-width-mobile;
+    }
   }
 
   .nav-link {
@@ -216,6 +220,7 @@ main {
       transform: translateX(-50%);
       display: block;
       margin-left: -110%;
+
       @media(max-width: 25em) {
         margin-left: -100%;
       }
@@ -269,7 +274,8 @@ h1 {
   margin: 1%;
   margin-top: 2%;
   fill: #50C79B;
-  @media (max-width: 25em){
+
+  @media (max-width: 25em) {
     margin: 5%;
     width: 20px;
     height: 20px;
@@ -283,7 +289,8 @@ h1 {
   margin-top: 2%;
   margin-left: clamp(30px, -1%, 35px);
   fill: #50C79B;
-  @media (max-width: 25em){
+
+  @media (max-width: 25em) {
     width: 75px;
     margin-top: 4%;
     margin-right: 5px;
@@ -296,16 +303,36 @@ h1 {
   font-size: 400%;
   margin: auto;
   text-align: center;
-  @media (max-width: 25em){
+
+  @media (max-width: 25em) {
     font-size: 2.25em;
   }
 }
 
 .navHeader {
   width: 100%;
-  height: 30%; 
+  height: 20%;
   padding-top: 3%;
-  @media (max-width: 25em){
+
+  @media (max-width: 25em) {
     height: 12%;
   }
+
+
+  .homeClass {
+    padding-top: 20%;
+  }
+}
+
+.homeClass {
+  padding-top: clamp(150px, 20%, 200px);
+
+  @media (max-width: 65em) {
+    padding-top: clamp(200px, 15%, 400px);
+  }
+
+  @media (max-width: 25em) {
+    padding-top: clamp(125px, 10%, 250px);
+  }
+
 }

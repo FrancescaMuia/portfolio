@@ -3,7 +3,7 @@ import ImageGallery  from "../components/ImageGallery"
 
 export function Home() {
     return (
-        <main style={{ padding: "20%" }}>
+        <main className="homeClass">
             <ImageGallery />
             <section>
                 <h1>Ciao</h1>

@@ -28,12 +28,33 @@ body {
 
 
 .prose img {
-margin-left: auto;
-margin-right: auto;
-border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
 
 .home-name {
   font-size: 150px;
 }
 
+.test {
+  width: 50%;
+}
+
+.testBowie {
+  width: 100000px;
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}

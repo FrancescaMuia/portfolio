@@ -11,16 +11,15 @@ import girl from "../images/girl.jpg"
 import lhascrittounafemmina from "../images/lhascrittounafemmina.jpg"
 import sfondo from "../images/sfondo.jpg"
 import treat_people_with_kindness from "../images/treat_people_with_kindness.jpg"
+import ResponsiveGallery from 'react-responsive-gallery';
 
 const PHOTO_SET = [
   {
     src: avocado,
-    width: 4,
-    height: 3
+    imgClassName: "test"
   }, {
     src: bowie,
-    width: 4,
-    height: 3
+    imgClassName: "testBowie"
   }, {
     src: capital_N,
     width: 4,
@@ -63,8 +62,29 @@ const PHOTO_SET = [
 export default class ImageGallery extends Component {
   render() {
     return (
-      <div>
-        <Gallery photos={PHOTO_SET} />
+      <div style={{ margin: "5%" }}>
+        <div className="flex justify-between" style={{ width: "98%", marginBottom: "1%" }}>
+          <img src={capital_N} style={{ width: "56%", height: "200%", marginRight: "1%" }} />
+          <img src={bowie} style={{ width: "45.1%", height: "200%", marginRight: "1%" }} />
+        </div>
+        <div className="flex justify-between" style={{ width: "100%", marginBottom: "1%" }}>
+          <div >
+            <img src={avocado} style={{ width: "95%", height: "49%", marginBottom: "5%" }} />
+            <img src={coffee} style={{ width: "95%", height: "49%", marginTop: "5%" }} />
+          </div>
+          <img src={girl} style={{ width: "40%", height: "50%", marginRight: "1%" }} />
+          <img src={treat_people_with_kindness} style={{ width: "40%", height: "50%", }} />
+        </div>
+        <div className="flex justify-between" style={{ width: "100%" }}>
+          <div style={{ width: "32%" }}>
+            <img src={sfondo} style={{ width: "95%", height: "46.8%", marginBottom: "5%" }} />
+            <img src={GB} style={{ width: "95%", height: "46.8%", marginTop: "5%" }} />
+          </div>
+          <img src={dtiys_alona} style={{ width: "40%", height: "50%", }} />
+          <img src={lhascrittounafemmina} style={{ width: "50.7%", height: "100%", marginLeft: "1%" }} />
+        </div>
+
+
       </div>
 
     );
