@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import Gallery from 'react-photo-gallery';
 import avocado from "../images/avocado.jpg"
 import bowie from "../images/bowie.jpg"
 import capital_N from "../images/capital_N.jpg"
@@ -11,7 +10,6 @@ import girl from "../images/girl.jpg"
 import lhascrittounafemmina from "../images/lhascrittounafemmina.jpg"
 import sfondo from "../images/sfondo.jpg"
 import treat_people_with_kindness from "../images/treat_people_with_kindness.jpg"
-import ResponsiveGallery from 'react-responsive-gallery';
 
 const PHOTO_SET = [
   {
@@ -81,7 +79,7 @@ export default class ImageGallery extends Component {
             <img src={GB} style={{ width: "95%", height: "46.8%", marginTop: "5%" }} />
           </div>
           <img src={dtiys_alona} style={{ width: "40%", height: "50%", }} />
-          <img src={lhascrittounafemmina} style={{ width: "50.7%", height: "100%", marginLeft: "1%" }} />
+          <img src={lhascrittounafemmina} style={{ width: "36.2%", height: "100%", marginLeft: "1%" }} />
         </div>
 
 
