@@ -13,7 +13,7 @@
 
   .contactSection {
       width: clamp(200px, 33%, 250px);
-      border: solid;
+      border: none;
       color: black;
       
       padding: 2%;
@@ -45,6 +45,7 @@
 
   .contactParagraph {
     width: 100%;
+    height: 100px;
     
   }
 
@@ -72,10 +73,10 @@
   }
 
   .Email-Form {
-    color:#000;
+    color:black;
     background-color:#50C79B;
     text-align:center;
-    padding-top:1%;
+    padding-top:3%;
     padding-bottom:3%;
     width: 60%;
     margin-left: 10%;
@@ -83,4 +84,22 @@
 
     .Email-Form-Title {
     font-size:100px;
+    }
+
+    .contactInput {
+      margin-left: 20%;
+      padding: 13px 17px;
+      margin-bottom: clamp(20px, 5%, 25px);
+    }
+
+    .inputButton {
+      margin-left: 20%;
+      width: 100px;
+      height: 40px;
+      background-color: white;
+      border-radius: 200px;
+      &:hover{
+        background-color: rgba(82, 82, 82, 0.692);
+        color: white;
+      }
     }

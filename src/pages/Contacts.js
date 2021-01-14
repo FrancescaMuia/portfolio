@@ -16,7 +16,9 @@ export function Contacts() {
 
             <p className="contactParagraph flex">
                 <a href="https://www.instagram.com/effeemme_art/"
-                    target="_blank" rel="noreferrer" className="contactParagraph flex"><InstagramLogo className="contactLogo" fill="black" /> <p className="contactSocial">Instagram</p> </a> </p>
+                    target="_blank" rel="noreferrer" className="contactParagraph flex">
+                    <InstagramLogo className="contactLogo" fill="black" />
+                    <p className="contactSocial"><b style={{ fontWeight: 500 }}>Instagram</b><br />effeemme_art </p> </a> </p>
             <p className="contactParagraph flex">
                 <a href="https://www.linkedin.com/in/francesca-mui%C3%A0-6135ba175/"
                     target="_blank" rel="noreferrer" className="contactParagraph flex"> <LinkedinLogo className="contactLogo" fill="black" /> <p className="contactSocial">LinkedIn</p> </a> </p>
@@ -26,25 +28,27 @@ export function Contacts() {
 
             </p>
         </section>
+            <div className="Email-Form">
 
 
 
+                <div className="Email-Form-Description">
 
 
+                    <form action="./email.php" method="POST" target="_blank" onsubmit="inviata()" id="mail_form" >
 
-            <h2>Send me an e-mail</h2>
+                        <input className="contactInput" type="text" name="name" size="55" style={{ opacity: 1 }} required placeholder="Name" /><br />
+                        <br />
 
-            <form action="../email.php">
-                <fieldset>
-                    <label>
-                        <p>Name</p>
-                        <input name="name" type="text" placeholder="ciao" id="1" />
-                    </label>
-                </fieldset>
-                <button type="submit">Submit</button>
-            </form>
-            <input name="name" type="text" placeholder="ciao" id="1" />
+                        <input className="contactInput" type="email" name="mail" size="55" style={{ opacity: 1 }} required placeholder="Email" /><br />
+                        <br />
 
+                        <textarea rows="10" cols="55" name="comment" style={{ padding: "2%" }} required placeholder="Message"></textarea><br /><br />
+                        <input className="inputButton" type="submit" value="Send" style={{ opacity: 1 }} />
+                    </form>
+
+                </div>
+            </div>
         </div>
     </main>
     )
