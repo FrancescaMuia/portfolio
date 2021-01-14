@@ -26,10 +26,10 @@ export function Navbar() {
                 </div>
                 <h1 className="navTitle">Francesca Muià</h1>
                 <input type="checkbox" id="navcheck" role="button" title="menu" />
-                <label for="navcheck" aria-hidden="true" title="menu">
-                    <span class="burger">
-                        <span class="bar">
-                            <span class="visuallyhidden">Menu</span>
+                <label htmlFor="navcheck" aria-hidden="true" title="menu">
+                    <span className="burger">
+                        <span className="bar">
+                            <span className="visuallyhidden">Menu</span>
                         </span>
                     </span>
                 </label>
