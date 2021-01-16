@@ -65,11 +65,11 @@
     padding-top: clamp(150px, 20%, 200px);
   
     @media (max-width: 65em) {
-      padding-top: clamp(200px, 15%, 400px);
+      padding-top: clamp(150px, 15%, 200px);
     }
   
     @media (max-width: 30em) {
-      padding-top: clamp(50px, 5%, 100px);
+      padding-top: clamp(110px, 15%, 150px);
     }
   
   }

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { ReactComponent as InstagramLogo } from "../icons/instagram.svg"
 import { ReactComponent as LinkedinLogo } from "../icons/linkedin.svg"
 import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
+import logo from "../images/LOGO_SITO.png"
 export function Navbar() {
     return (
         <header className="navHeader" style={{ backgroundColor: "#fffaf2", position: "fixed", zIndex: 1000, width: "100%" }}>
@@ -24,7 +25,7 @@ export function Navbar() {
 
                     </a>
                 </div>
-                <h1 className="navTitle">Francesca Muià</h1>
+                <div className="navTitle flex justify-between"><img src={logo} className="logoSite" /></div>
                 <input type="checkbox" id="navcheck" role="button" title="menu" />
                 <label htmlFor="navcheck" aria-hidden="true" title="menu">
                     <span className="burger">
