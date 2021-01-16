@@ -18,7 +18,7 @@ export function Navbar() {
                         <LinkedinLogo className="logo" fill="black" />
 
                     </a>
-                    <a href=""
+                    <a href="https://www.google.com/"
                         className="logo" target="_blank" rel="noreferrer">
                         <BehanceLogo className="logo" fill="black" />
 

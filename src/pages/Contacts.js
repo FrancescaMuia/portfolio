@@ -2,9 +2,6 @@ import React from "react"
 import { ReactComponent as InstagramLogo } from "../icons/instagram.svg"
 import { ReactComponent as LinkedinLogo } from "../icons/linkedin.svg"
 import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
-import { Form, Field } from 'react-final-form'
-
-
 
 export function Contacts() {
     return (<main className="contactClass">
@@ -23,7 +20,7 @@ export function Contacts() {
                 <a href="https://www.linkedin.com/in/francesca-mui%C3%A0-6135ba175/"
                     target="_blank" rel="noreferrer" className="contactParagraph flex"> <LinkedinLogo className="contactLogo" fill="black" /> <p className="contactSocial">LinkedIn</p> </a> </p>
             <p className="contactParagraph flex">
-                <a href=""
+                <a href="https://www.google.com"
                     target="_blank" rel="noreferrer" className="contactParagraph flex"> <BehanceLogo className="contactLogo" fill="black" /> <p className="contactSocial">Behance</p> </a>
 
             </p>
