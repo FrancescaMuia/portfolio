@@ -35,20 +35,20 @@ export function Navbar() {
                     </span>
                 </label>
                 <nav id="menu">
-                    <NavLink to="/" exact
+                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/" exact
                         activeClassName="text-white"
                         className="nav-link inflex-flex items-center py-6 px-3 mr-4 text-red-100  text-4xl font-bold tracking-widest">
                         Home
                     </NavLink>
-                    <NavLink to="/about"
+                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/about"
                         className="nav-link inline-flex items-center py-3 px-3 my-6 rounded text-red-200 ">
                         About
                     </NavLink>
-                    <NavLink to="/contacts"
+                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/contacts"
                         className="nav-link inline-flex items-center py-3 px-3 my-6 rounded text-red-200 ">
                         Contacts
                     </NavLink>
-                    <NavLink to="/projects"
+                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/projects"
                         className="nav-link inline-flex items-center py-3 px-3 my-6 rounded text-red-200 ">
                         Projects
                     </NavLink>
