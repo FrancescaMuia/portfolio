@@ -19,7 +19,7 @@ export function Navbar() {
                         <LinkedinLogo className="logo" fill="black" />
 
                     </a>
-                    <a href="https://www.google.com/"
+                    <a href="https://www.behance.net/francescamuia"
                         className="logo" target="_blank" rel="noreferrer">
                         <BehanceLogo className="logo" fill="black" />
 
@@ -35,20 +35,20 @@ export function Navbar() {
                     </span>
                 </label>
                 <nav id="menu">
-                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/" exact
+                    <NavLink onClick={() => { document.getElementById("navcheck").checked = false; }} to="/" exact
                         activeClassName="text-white"
                         className="nav-link inflex-flex items-center py-6 px-3 mr-4 text-red-100  text-4xl font-bold tracking-widest">
                         Home
                     </NavLink>
-                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/about"
+                    <NavLink onClick={() => { document.getElementById("navcheck").checked = false; }} to="/about"
                         className="nav-link inline-flex items-center py-3 px-3 my-6 rounded text-red-200 ">
                         About
                     </NavLink>
-                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/contacts"
+                    <NavLink onClick={() => { document.getElementById("navcheck").checked = false; }} to="/contacts"
                         className="nav-link inline-flex items-center py-3 px-3 my-6 rounded text-red-200 ">
                         Contacts
                     </NavLink>
-                    <NavLink onClick={()=>{ document.getElementById("navcheck").checked = false;}} to="/projects"
+                    <NavLink onClick={() => { document.getElementById("navcheck").checked = false; }} to="/projects"
                         className="nav-link inline-flex items-center py-3 px-3 my-6 rounded text-red-200 ">
                         Projects
                     </NavLink>

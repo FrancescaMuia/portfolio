@@ -220,7 +220,7 @@ main {
       transform: skewX(-15deg) translateX(-120%);
       display: block;
       width: 300%;
-      margin-top: clamp(20px, 2%, 30px);
+      
 
       @media(max-width:"35em") {
         width: 500%;
