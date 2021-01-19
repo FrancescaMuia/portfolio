@@ -19,9 +19,7 @@
     margin-left: 7%;
     @media (max-width: 65em) {
       display: block;
-    }
-    @media (max-width: 35em) {
-      display: block;
+      margin-left: 0%;
     }
   
   }
@@ -36,8 +34,9 @@
       margin: 2%;
       border-color: #50C79B;
 
-      @media (max-width: 30em) {
-        margin-left: 25%;
+      @media (max-width: 65em) {
+        margin-left: 8%;
+        width: 84%;
       }
   }
 
@@ -158,4 +157,10 @@ width: 80%;
       padding: clamp(45px, 6%, 70px);
       border-radius: 1px;
       padding-left: 3%;
+
+      @media (max-width: 65em) {
+       padding-left: 10%;
+       padding-top: 3%;
+       padding-bottom: 12%;
+      }
     }

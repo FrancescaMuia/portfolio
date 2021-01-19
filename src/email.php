@@ -2,7 +2,7 @@
 
 
 //var_dump($_POST);
-mail("francesca.muia91@gmail.com",$_POST["name"],$_POST["comment"],"From:".$_POST["mail"]);
+mail("contactme@francescamuia.it",$_POST["name"],$_POST["comment"]." ".$_POST["mail"],"From: website@francescamuia.it");
 echo "<script>window.close();</script>";
 
  ?> 
