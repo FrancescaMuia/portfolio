@@ -324,15 +324,6 @@ h1 {
   vertical-align: middle;
 margin-top: clamp(2px, 5%, 5px);
 width: 35%;
-    margin-left: clamp(150px, 25%, 375px);
-
-    @media(max-width: 65em){
-      margin-left: clamp(125px, 15%, 150px);
-    }
-    @media(max-width: 35em){
-      margin-left: clamp(50px, 25%, 75px);
-    }
-    
 }
 
 .navHeader {
@@ -340,8 +331,8 @@ width: 35%;
   height: 30%;
   padding-top: 1%;
 
-  @media (max-width: 30em) {
-    height: 15%;
+  @media (max-width: 35em) {
+    height: clamp(100px, 19%, 115px);
   }
 
 }
