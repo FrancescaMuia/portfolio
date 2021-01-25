@@ -17,25 +17,31 @@ import treat_people_with_kindness from "../images/treat_people_with_kindness.jpg
 
 
 export default class ProjectsImage extends Component {
+    constructor() {
+        super()
+        this.state = {
+            show: false,
+            img: ""
+        };
+        this.showModal.bind(this);
 
-    state = {
-        show: false,
-        img: avocado
-    };
-    showModal(img) {
-        this.setState({
-            show: !this.state.show,
+    }
+
+    showModal = (img) => {
+        console.log(img);
+        this.setState(prev => ({
+            show: !prev.show,
             img: img
-        });
+        }));
     };
-
 
     render() {
         var modal = document.getElementById("myModal");
+        var test = "../images/avocado.jpg";
 
         return (<div className="homeClass projectClass">
             <Modal onClose={this.showModal}
-                show={this.state.show} />
+                show={this.state.show} name={this.state.img} />
 
             <div className="responsive">
                 <div className="gallery">
@@ -49,57 +55,67 @@ export default class ProjectsImage extends Component {
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <a target="_blank" href={bowie}>
+                    <div onClick={e => {
+                        this.showModal(bowie);
+                    }}>
                         <img src={bowie} alt="bowie" width="600" height="400" />
-                    </a>
+                    </div>
                     <div className="desc">Add a description of the image here</div>
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <a target="_blank" href={capital_N}>
+                    <div onClick={e => {
+                        this.showModal(capital_N);
+                    }}>
                         <img src={capital_N} alt="capital_N" width="600" height="400" />
-                    </a>
+                    </div>
                     <div className="desc">Add a description of the image here</div>
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <a target="_blank" href={coffee}>
+                    <div onClick={e => {
+                        this.showModal(coffee);
+                    }}>
                         <img src={coffee} alt="coffee" width="600" height="400" />
-                    </a>
+                    </div>
                     <div className="desc">Add a description of the image here</div>
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <a target="_blank" href={desk}>
-                        <img src={desk} alt="desk" width="600" height="400" />
-                    </a>
+                    <div onClick={e => {
+                        this.showModal(desk);
+                    }}>                        <img src={desk} alt="desk" width="600" height="400" />
+                    </div>
                     <div className="desc">Add a description of the image here</div>
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <a target="_blank" href={dtiys_alona}>
-                        <img src={dtiys_alona} alt="dtiys_alona" width="600" height="400" />
-                    </a>
+                    <div onClick={e => {
+                        this.showModal(dtiys_alona);
+                    }}>                        <img src={dtiys_alona} alt="dtiys_alona" width="600" height="400" />
+                    </div>
                     <div className="desc">Add a description of the image here</div>
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <a target="_blank" href={GB}>
-                        <img src={GB} alt="GB" width="600" height="400" />
-                    </a>
+                    <div onClick={e => {
+                        this.showModal(GB);
+                    }}>                        <img src={GB} alt="GB" width="600" height="400" />
+                    </div>
                     <div className="desc">Add a description of the image here</div>
                 </div>
             </div>
             <div className="responsive" style={{ paddingBottom: "10%" }}>
                 <div className="gallery">
-                    <a target="_blank" href={girl}>
-                        <img src={girl} alt="girl" width="600" height="400" />
-                    </a>
+                    <div onClick={e => {
+                        this.showModal(girl);
+                    }}>                        <img src={girl} alt="girl" width="600" height="400" />
+                    </div>
                     <div className="desc">Add a description of the image here</div>
                 </div>
             </div>
