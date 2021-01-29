@@ -40,7 +40,7 @@ export default class Modal extends React.Component {
     // Here we get the length of the imgs array, and the current
     // pointer position. If the pointer is at the end of the array
     // set it back to zero, otherwise increase it by one.
-    handleClick(start) {
+    handleClick(start, next) {
         const { length } = this.state.imgs;
         const { pointer, clicked } = this.state;
         let newPointer = 0;
@@ -48,12 +48,18 @@ export default class Modal extends React.Component {
 
         if (clicked === false) {
             console.log("inside if");
-            newPointer = start === length - 1 ? 0 : start + 1;
+            if (next)
+                newPointer = start === length - 1 ? 0 : start + 1;
+            else
+                newPointer = start === 0 ? length - 1 : start - 1;
+
         }
         else {
             console.log("inside else");
-
-            newPointer = pointer === length - 1 ? 0 : pointer + 1;
+            if (next)
+                newPointer = pointer === length - 1 ? 0 : pointer + 1;
+            else
+                newPointer = pointer === 0 ? length - 1 : pointer - 1;
         }
         console.log(this.props);
         console.log(newPointer);
@@ -78,6 +84,11 @@ export default class Modal extends React.Component {
 
         return (
             <div className="modalClass flex">
+                <p onClick={() => {
+                    this.handleClick(this.props.start, false);
+                    this.clicked(true);
+
+                }}>Previous</p>
                 <img src={imgs[this.state.bool === false ? this.props.start : pointer]} style={{ width: "30%" }} onClick={() => {
                     this.clicked(false);
 
@@ -85,10 +96,10 @@ export default class Modal extends React.Component {
                 }
                 } />
                 <p onClick={() => {
-                    this.handleClick(this.props.start);
+                    this.handleClick(this.props.start, true);
                     this.clicked(true);
 
-                }}>Freccia</p>
+                }}>Next</p>
             </div>
         )
     }
