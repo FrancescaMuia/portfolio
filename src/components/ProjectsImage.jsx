@@ -31,22 +31,24 @@ export default class ProjectsImage extends Component {
         console.log(img);
         this.setState(prev => ({
             show: !prev.show,
-            img: img
+            img: img,
+            bool: false,
         }));
     };
+
 
     render() {
         var modal = document.getElementById("myModal");
         var test = "../images/avocado.jpg";
 
         return (<div className="homeClass projectClass">
-            <Modal onClose={this.showModal}
-                show={this.state.show} name={this.state.img} />
+            <Modal onClose={this.showModal} changeState={this.changeState}
+                show={this.state.show} start={this.state.img} bool={this.state.bool} />
 
             <div className="responsive">
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(avocado);
+                        this.showModal(0);
                     }}>
                         <img src={sito_avocado} alt="avocado" width="600" height="400" />
                     </div>
@@ -56,7 +58,7 @@ export default class ProjectsImage extends Component {
             <div className="responsive">
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(bowie);
+                        this.showModal(1);
                     }}>
                         <img src={bowie} alt="bowie" width="600" height="400" />
                     </div>
@@ -66,7 +68,7 @@ export default class ProjectsImage extends Component {
             <div className="responsive">
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(capital_N);
+                        this.showModal(2);
                     }}>
                         <img src={capital_N} alt="capital_N" width="600" height="400" />
                     </div>
@@ -76,7 +78,7 @@ export default class ProjectsImage extends Component {
             <div className="responsive">
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(coffee);
+                        this.showModal(3);
                     }}>
                         <img src={coffee} alt="coffee" width="600" height="400" />
                     </div>
@@ -86,7 +88,7 @@ export default class ProjectsImage extends Component {
             <div className="responsive">
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(desk);
+                        this.showModal(4);
                     }}>                        <img src={desk} alt="desk" width="600" height="400" />
                     </div>
                     <div className="desc">Add a description of the image here</div>
@@ -95,7 +97,7 @@ export default class ProjectsImage extends Component {
             <div className="responsive">
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(dtiys_alona);
+                        this.showModal(5);
                     }}>                        <img src={dtiys_alona} alt="dtiys_alona" width="600" height="400" />
                     </div>
                     <div className="desc">Add a description of the image here</div>
@@ -104,7 +106,7 @@ export default class ProjectsImage extends Component {
             <div className="responsive">
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(GB);
+                        this.showModal(6);
                     }}>                        <img src={GB} alt="GB" width="600" height="400" />
                     </div>
                     <div className="desc">Add a description of the image here</div>
@@ -113,7 +115,7 @@ export default class ProjectsImage extends Component {
             <div className="responsive" style={{ paddingBottom: "10%" }}>
                 <div className="gallery">
                     <div onClick={e => {
-                        this.showModal(girl);
+                        this.showModal(7);
                     }}>                        <img src={girl} alt="girl" width="600" height="400" />
                     </div>
                     <div className="desc">Add a description of the image here</div>
