@@ -18,6 +18,7 @@ export default class Modal extends React.Component {
         this.state = {
             // clicks is called `pointer` here and initially
             // is set to the first index of the imgs array
+            clicked: false,
             bool: false,
             pointer: 0,
             imgs: [
@@ -39,20 +40,29 @@ export default class Modal extends React.Component {
     // Here we get the length of the imgs array, and the current
     // pointer position. If the pointer is at the end of the array
     // set it back to zero, otherwise increase it by one.
-    handleClick(boolState, start) {
+    handleClick(start) {
         const { length } = this.state.imgs;
-        const { pointer } = this.state;
+        const { pointer, clicked } = this.state;
         let newPointer = 0;
+        console.log(`start: ${start}, boolState:${clicked}, pointer:${pointer}`);
 
-        if (start && boolState == false) {
+        if (clicked === false) {
+            console.log("inside if");
             newPointer = start === length - 1 ? 0 : start + 1;
         }
         else {
+            console.log("inside else");
+
             newPointer = pointer === length - 1 ? 0 : pointer + 1;
         }
         console.log(this.props);
         console.log(newPointer);
-        this.setState({ pointer: newPointer, bool: boolState });
+        this.setState({ pointer: newPointer, bool: true });
+    }
+
+    clicked(click) {
+        this.setState({ clicked: click, bool: click });
+
     }
 
     render() {
@@ -69,12 +79,15 @@ export default class Modal extends React.Component {
         return (
             <div className="modalClass flex">
                 <img src={imgs[this.state.bool === false ? this.props.start : pointer]} style={{ width: "30%" }} onClick={() => {
+                    this.clicked(false);
+
                     this.props.onClose();
-                    this.handleClick(false, this.props.start);
                 }
                 } />
                 <p onClick={() => {
-                    this.handleClick(true);
+                    this.handleClick(this.props.start);
+                    this.clicked(true);
+
                 }}>Freccia</p>
             </div>
         )
