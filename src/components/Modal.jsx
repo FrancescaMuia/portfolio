@@ -7,6 +7,8 @@ import desk from "../images/desk.jpg"
 import dtiys_alona from "../images/dtiys_alona.jpg"
 import GB from "../images/GB.jpg"
 import girl from "../images/girl.jpg"
+import $ from 'jquery';
+
 
 export default class Modal extends React.Component {
 
@@ -71,6 +73,11 @@ export default class Modal extends React.Component {
 
     }
 
+    restart() {
+        let $target = $('#target');
+        $target.removeClass('galleryImage');
+        setTimeout("$target.addClass('galleryImage');", 100)
+    }
     render() {
         if (!this.props.show) {
             return null;
@@ -84,22 +91,22 @@ export default class Modal extends React.Component {
 
         return (
             <div className="modalClass flex">
-                <p onClick={() => {
+                <p className="arrow" style={{ float: "left" }} onClick={() => {
                     this.handleClick(this.props.start, false);
                     this.clicked(true);
-
-                }}>Previous</p>
-                <img src={imgs[this.state.bool === false ? this.props.start : pointer]} style={{ width: "30%" }} onClick={() => {
+                    this.restart();
+                }}>&#60;</p>
+                <img id="target" className="galleryImage" src={imgs[this.state.bool === false ? this.props.start : pointer]} style={{ width: "35%" }} onClick={() => {
                     this.clicked(false);
 
                     this.props.onClose();
                 }
                 } />
-                <p onClick={() => {
+                <p className="arrow" onClick={() => {
                     this.handleClick(this.props.start, true);
                     this.clicked(true);
 
-                }}>Next</p>
+                }}>&#62;</p>
             </div>
         )
     }
