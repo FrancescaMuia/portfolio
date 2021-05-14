@@ -6,10 +6,7 @@ div.gallery {
     border: none;
   }
   
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
+ 
   
   div.desc {
     padding: 15px;
@@ -26,6 +23,7 @@ div.gallery {
     width: 20%;
     margin: 5% 1.5%;
     margin-bottom: 0;
+  
   }
   
   @media only screen and (max-width: 700px) {
@@ -92,3 +90,21 @@ div.gallery {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .image-style{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background: #ffefd3;
+  }
+
+  .image-border {
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+
+ 

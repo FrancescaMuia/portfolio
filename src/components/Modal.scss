@@ -21,7 +21,7 @@ cursor: pointer;
 }
 
 .galleryImage {
-  animation: hd-quality 1.5s;
+  animation: hd-quality 1s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 
@@ -37,7 +37,7 @@ cursor: pointer;
         }
         100% {
          
-            filter: blur(1px);
+            filter: blur(0px);
         }
       }
     }
