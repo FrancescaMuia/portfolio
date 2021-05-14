@@ -77,7 +77,7 @@ export default class ProjectsImage extends Component {
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
+                    <div className="image-style" style={{ marginRight: "-1%" }} onClick={e => {
                         this.showModal(3);
                     }}>
                         <img src={coffee} alt="coffee" className="image-border" style={{ height: "100%" }} />
