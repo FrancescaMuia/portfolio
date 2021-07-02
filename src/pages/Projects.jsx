@@ -10,9 +10,9 @@ export function Projects() {
                     <ul>
                         <span className="listBullet">&#8226;</span> <a className="siteLink" target="_blank" href="https://www.eufemistampe.com/">Eufemi Stampe Antiche</a> | A WordPress website homemade for a shop in Rome.
                     </ul>
-                    {/* <ul>
-                        <span className="listBullet">&#8226;</span> <a className="siteLink" target="_blank" href="https://www.eufemistampe.com/">Eufemi Stampe Antiche</a> | A WordPress website homemade for a shop in Rome.
-                    </ul> <ul>
+                    <ul>
+                        <span className="listBullet">&#8226;</span> <a className="siteLink" target="_blank" href="https://ecomuseinet.it/">Ecomuseinet</a> | A WordPress website made for Lazio Region.
+                    </ul>{/* <ul>
                         <span className="listBullet">&#8226;</span> <a className="siteLink" target="_blank" href="https://www.eufemistampe.com/">Eufemi Stampe Antiche</a> | A WordPress website homemade for a shop in Rome.
                     </ul> <ul>
                         <span className="listBullet">&#8226;</span> <a className="siteLink" target="_blank" href="https://www.eufemistampe.com/">Eufemi Stampe Antiche</a> | A WordPress website homemade for a shop in Rome.

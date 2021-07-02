@@ -64,15 +64,15 @@
 }
 
 .homeClass {
-    padding-top: clamp(150px, 20%, 200px);
+    // padding-top: clamp(250px, 20%, 300px);
   
-    @media (max-width: 65em) {
-      padding-top: clamp(150px, 15%, 200px);
-    }
+    // @media (max-width: 65em) {
+    //   padding-top: clamp(190px, 15%, 200px);
+    // }
   
-    @media (max-width: 35em) {
-      padding-top: clamp(125px, 15%, 135px);
-    }
+    // @media (max-width: 35em) {
+    //   padding-top: clamp(125px, 15%, 135px);
+    // }
   
   }
 

@@ -6,8 +6,8 @@ import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
 import logo from "../images/LOGO_SITO.png"
 export function Navbar() {
     return (
-        <header className="navHeader" style={{ backgroundColor: "#fffaf2", position: "fixed", zIndex: 1000, width: "100%" }}>
-            <div className="mx-auto flex justify-between">
+        <header className="navHeader" style={{ backgroundColor: "#fffaf2", zIndex: 1000, width: "100%" }}>
+            <div className="mx-auto flex justify-between align-center">
                 <div className="container flex justify-between logoContainer" >
                     <a href="https://www.instagram.com/effeemme_art/"
                         className="logo" target="_blank" rel="noreferrer">

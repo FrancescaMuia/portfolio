@@ -13,14 +13,14 @@ span {
 }
 
 label {
-  margin-top: clamp(45px, 4%, 50px);
+  
 
   color: #50C79B;
   float: right;
   margin-right: clamp(30px, -1%, 35px);
   z-index: 1000;
   
-  padding: 0;
+  padding-bottom: 20px;
   border: none;
   outline: none;
   background: none;
@@ -52,6 +52,7 @@ label {
     margin: 0;
     padding: 0;
     transition: opacity .5s $timing-function;
+    
 
     @media (max-width: 35em) {
       width: 1.80em;
@@ -262,7 +263,6 @@ main {
 
 main {
   background:#fffaf2;
-  padding: 5% 0;
 }
 
 article {
@@ -304,12 +304,12 @@ h1 {
 }
 
 .logoContainer {
+  padding-bottom: 30px;
   width: 100px;
   height: 35px;
-  margin-top: clamp(50px, 2%, 55px);
   margin-left: clamp(30px, -1%, 35px);
   fill: #50C79B;
-  vertical-align: middle;
+  display: flex;
 
   @media (max-width: 30em) {
     width: 75px;
@@ -338,8 +338,12 @@ width: 35%;
 }
 
 .logoSite {
-  height: 50%;
-width: clamp(200px, 50%, 250px);
+  height: clamp(170px, 50%, 250px);
+width: clamp(190px, 50%, 250px);
 margin: auto;
 margin-top: clamp(-2px, -5%, -15px);
+}
+
+.align-center {
+  align-items: center;
 }

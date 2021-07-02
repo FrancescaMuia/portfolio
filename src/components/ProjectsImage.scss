@@ -13,7 +13,7 @@ div.gallery {
     text-align: center;
     width: 20vw;
 
-    @media only screen and (max-width:720px){
+    @media only screen and (max-width:500px){
       width: 250px;
     }
   }
@@ -34,11 +34,11 @@ div.gallery {
   
   }
   
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 55%;
-    }
-  }
+  // @media only screen and (max-width: 700px) {
+  //   .responsive {
+  //     width: 55%;
+  //   }
+  // }
   
   @media only screen and (max-width: 500px) {
     .responsive {
@@ -104,7 +104,7 @@ div.gallery {
     width: 20vw;
     height: 20vw;
     background: #ffefd3;
-    @media only screen and (max-width:720px){
+    @media only screen and (max-width:500px){
       width: 250px;
       height: 250px;
     }
