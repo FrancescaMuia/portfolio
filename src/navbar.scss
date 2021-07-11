@@ -72,10 +72,11 @@ label {
       content: '';
       transition: all .5s $timing-function;
 
-      @media (max-width: 25em) {
+      @media (max-width: 375px) {
         margin: 3px;
         margin-top: 3px;
         margin-bottom: 3px;
+        height: 20%;
       }
     }
 
@@ -154,6 +155,18 @@ nav {
     transition: color .15s, transform .5s;
     transition-timing-function: $timing-function;
 
+    @media only screen and(min-width: 1366px) and (min-height: 1024px){
+      padding: 0.3em .5em;
+      font-size: 2em;
+
+    }
+
+    @media only screen and(min-width: 1024px) and (min-height: 1366px){
+      padding: 0;
+      font-size: 2em;
+
+    }
+
     @for $i from 1 through $nav-item-nb {
       &:nth-child(#{$i}) {
         transition-delay: 0s,
@@ -192,6 +205,9 @@ main {
       &::before,
       &::after {
         width: 141.42%; // Pythagore!
+        @media (max-width: 375px) {
+          width: 121.42%;
+        margin-right: 30px;}
       }
 
       &::before {
@@ -221,11 +237,26 @@ main {
       transform: skewX(-15deg) translateX(-120%);
       display: block;
       width: 300%;
+
+      @media (min-width: 1366px) and (min-height: 1024px){
+      transform: skewX(
+-15deg
+) translateX(-130%);
+      }
+
+      @media (min-width: 1024px) and (min-height: 1366px){
+        transform: skewX(
+  -10deg
+  ) translateX(-130%);
+  width: 330%;
+        }
       
 
       @media(max-width:"35em") {
         width: 500%;
       }
+
+      
       
     }
 
@@ -237,7 +268,16 @@ main {
       @media(max-width: 35em) {
         margin-left: clamp(-200px, -132%, -225px);
       }
-    }
+      @media (max-width: 360px){
+    margin-left: clamp(-180px, -132%, -225px);
+}
+ @media (max-width: 320px) {
+          margin-left: clamp(-160px, -132%, -225px);
+      }
+      
+      }
+
+    
   }
 
   &~main .content {
