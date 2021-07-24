@@ -3,10 +3,12 @@ import avocado from "../images/avocado.jpg"
 import bowie from "../images/bowie.jpg"
 import capital_N from "../images/capital_N.jpg"
 import coffee from "../images/coffee.jpg"
-import desk from "../images/desk.jpg"
+import Mille from "../images/Mille.JPG"
 import dtiys_alona from "../images/dtiys_alona.jpg"
 import GB from "../images/GB.jpg"
 import girl from "../images/girl.jpg"
+import loki from "../images/Loki.JPG"
+import rumore from "../images/Rumore.JPG"
 import $ from 'jquery';
 
 
@@ -24,11 +26,13 @@ export default class Modal extends React.Component {
             bool: false,
             pointer: 0,
             imgs: [
+                loki,
+                rumore,
                 avocado,
                 bowie,
                 capital_N,
                 coffee,
-                desk,
+                Mille,
                 dtiys_alona,
                 GB,
                 girl

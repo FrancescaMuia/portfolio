@@ -25,8 +25,8 @@ div.gallery {
   .responsive {
     padding: 0 6px;
     float: left;
-    width: 21%;
-    margin: 5% 1.5%;
+    width: 30%;
+    margin: 3% 1.5%;
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -97,13 +97,15 @@ div.gallery {
   }
 
   .image-style{
-    padding: 10%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: 20vw;
+    width: 30vw;
+    height: 30vw;
     background: #ffefd3;
+    background-size: cover;
+    background-position: center;
     @media only screen and (max-width:500px){
       width: 250px;
       height: 250px;
@@ -114,7 +116,6 @@ div.gallery {
 
   .image-border {
     border-style: solid;
-    border-width: 5px;
     border-color: white;
     &:hover{
       filter:opacity(90%) contrast(97%);

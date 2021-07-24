@@ -6,14 +6,15 @@ import avocado from "../images/avocado.jpg"
 import bowie from "../images/bowie.jpg"
 import capital_N from "../images/capital_N.jpg"
 import coffee from "../images/coffee.jpg"
-import desk from "../images/desk.jpg"
+import mille from "../images/Mille.JPG"
 import dtiys_alona from "../images/dtiys_alona.jpg"
-import GB from "../images/GB.jpg"
+import gb from "../images/GB.jpg"
 import girl from "../images/girl.jpg"
 import lhascrittounafemmina from "../images/lhascrittounafemmina.jpg"
 import sfondo from "../images/sfondo.jpg"
 import treat_people_with_kindness from "../images/treat_people_with_kindness.jpg"
-
+import rumore from "../images/Rumore.JPG"
+import loki from "../images/Loki.JPG"
 
 
 export default class ProjectsImage extends Component {
@@ -47,78 +48,98 @@ export default class ProjectsImage extends Component {
 
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
+                    <div className="image-style" style={{ backgroundImage: `url(${loki})` }} onClick={e => {
                         this.showModal(0);
                     }}>
-                        <img src={sito_avocado} alt="avocado" className="image-border" style={{ height: "100%" }} />
+
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
+                    <div className="image-style" style={{ backgroundImage: `url(${rumore})` }} onClick={e => {
                         this.showModal(1);
                     }}>
-                        <img src={bowie} alt="bowie" className="image-border" style={{ height: "100%" }} />
+
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
+                    <div className="image-style" style={{ backgroundImage: `url(${avocado})` }} onClick={e => {
                         this.showModal(2);
                     }}>
-                        <img src={capital_N} alt="capital_N" className="image-border" style={{ height: "100%" }} />
+
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" style={{ marginRight: "-1%" }} onClick={e => {
+                    <div className="image-style" style={{ backgroundImage: `url(${bowie})` }} onClick={e => {
                         this.showModal(3);
                     }}>
-                        <img src={coffee} alt="coffee" className="image-border" style={{ height: "100%" }} />
+
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
+                    <div className="image-style" style={{ backgroundImage: `url(${capital_N})` }} onClick={e => {
                         this.showModal(4);
-                    }}>                        <img src={desk} alt="desk" className="image-border" style={{ height: "100%" }} />
+                    }}>
+
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
+                    <div className="image-style" style={{ backgroundImage: `url(${coffee})` }} onClick={e => {
                         this.showModal(5);
-                    }}>                        <img src={dtiys_alona} alt="dtiys_alona" className="image-border" style={{ height: "100%" }} />
+                    }}>
+
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
                 </div>
             </div>
             <div className="responsive">
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
+                    <div className="image-style" style={{ backgroundImage: `url(${mille})` }} onClick={e => {
                         this.showModal(6);
-                    }}>                        <img src={GB} alt="GB" className="image-border" style={{ height: "100%" }} />
+                    }}>
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
+                </div>
+            </div>
+            <div className="responsive">
+                <div className="gallery">
+                    <div className="image-style" style={{ backgroundImage: `url(${dtiys_alona})` }} onClick={e => {
+                        this.showModal(7);
+                    }}>
+                    </div>
+
+                </div>
+            </div>
+            <div className="responsive">
+                <div className="gallery">
+                    <div className="image-style" style={{ backgroundImage: `url(${gb})` }} onClick={e => {
+                        this.showModal(8);
+                    }}>
+                    </div>
+
                 </div>
             </div>
             <div className="responsive" style={{ paddingBottom: "10%" }}>
                 <div className="gallery">
-                    <div className="image-style" onClick={e => {
-                        this.showModal(7);
-                    }}>                        <img src={girl} alt="girl" className="image-border" style={{ height: "100%" }} />
+                    <div className="image-style" style={{ backgroundImage: `url(${girl})` }} onClick={e => {
+                        this.showModal(9);
+                    }}>
                     </div>
-                    <div className="desc">Add a description of the image here</div>
+
                 </div>
             </div>
         </div>)
