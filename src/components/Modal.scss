@@ -21,24 +21,9 @@ cursor: pointer;
 }
 
 .galleryImage {
-  animation: hd-quality 1s;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 
     &:hover{
         cursor: pointer;    
     }
-    &::after {
-     
-      @keyframes hd-quality {
-        0% {
-         
-            filter: blur(20px);
-        }
-        100% {
-         
-            filter: blur(0px);
-        }
-      }
-    }
+    
 }
