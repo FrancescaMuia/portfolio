@@ -107,11 +107,11 @@ export default class Modal extends React.Component {
         return (
             <div className="modalClass flex" onClick={() => {
                 isArrow = false;
-                if (isArrow === false) {
-                    this.clicked(false);
+                // if (isArrow === false) {
+                //     this.clicked(false);
 
-                    this.props.onClose();
-                }
+                //     this.props.onClose();
+                // }
             }
             }>
                 <p className="arrow" style={{ float: "left" }} onClick={() => {

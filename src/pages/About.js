@@ -1,5 +1,5 @@
 import React from "react"
-import profilo from "../images/Img profilo.jpg"
+import profilo from "../images/IMG_ABOUT.jpg"
 export function About() {
     return (
         <main style={{ display: "flex", justifyContent: "space-between", margin: "5% 14%" }} className="homeClass">

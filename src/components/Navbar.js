@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import { ReactComponent as InstagramLogo } from "../icons/instagram.svg"
 import { ReactComponent as LinkedinLogo } from "../icons/linkedin.svg"
 import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
-import logo from "../images/LOGO_SITO.png"
+import logo from "../images/Logo_orizzontale.png"
 export function Navbar() {
     return (
         <header className="navHeader" style={{ backgroundColor: "#fffaf2", zIndex: 1000, width: "100%" }}>
             <div className="mx-auto flex justify-between align-center">
-                <div className="container flex justify-between logoContainer" >
+                {/* <div className="container flex justify-between logoContainer" >
                     <a href="https://www.instagram.com/effeemme_art/"
                         className="logo" target="_blank" rel="noreferrer">
                         <InstagramLogo className="logo" fill="black" />
@@ -24,7 +24,7 @@ export function Navbar() {
                         <BehanceLogo className="logo" fill="black" />
 
                     </a>
-                </div>
+                </div> */}
 
                 <NavLink to="/" className="navTitle flex justify-between"> <img src={logo} className="logoSite" /></NavLink>
                 <input type="checkbox" id="navcheck" role="button" title="menu" />
@@ -53,6 +53,23 @@ export function Navbar() {
                         className="nav-link inline-flex items-center py-3 px-3 my-6 rounded text-red-200 ">
                         Projects
                     </NavLink>
+                    <div className=" icone-social">
+                        <a href="https://www.instagram.com/effeemme_art/"
+                            className="logo " target="_blank" rel="noreferrer">
+                            <InstagramLogo className="logo" fill="black" />
+
+                        </a>
+                        <a href="https://www.linkedin.com/in/francesca-mui%C3%A0-6135ba175/"
+                            className="logo " target="_blank" rel="noreferrer">
+                            <LinkedinLogo className="logo" fill="black" />
+
+                        </a>
+                        <a href="https://www.behance.net/francescamuia"
+                            className="logo " target="_blank" rel="noreferrer">
+                            <BehanceLogo className="logo" fill="black" />
+
+                        </a>
+                    </div>
                 </nav>
 
                 {/* <nav className="flex">
