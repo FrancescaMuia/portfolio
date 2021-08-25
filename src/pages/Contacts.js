@@ -5,10 +5,10 @@ import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
 
 export function Contacts() {
     return (<main className="contactClass">
-        <hr></hr>
-        <p className="contactTitle">
-            Contact Me
-        </p>
+        <section className="homeSpacer">
+            <div className="spacerOverlay"><p data-aos="fade-up">Contacts</p></div>
+        </section>
+
         <div className="flex contacts"> <section className="contactSection">
             <div className="socialBox">
 
@@ -45,7 +45,7 @@ export function Contacts() {
                     <input className="contactInput" type="email" name="mail" style={{ opacity: 1 }} required placeholder="Email" /><br />
 
 
-                    <textarea rows="10" name="comment" className="boxForm" required placeholder="Message"></textarea><br /><br />
+                    <textarea rows="10" name="comment" className="boxForm" required placeholder="Message"></textarea><br />
                     <input className="inputButton" type="submit" value="Send" style={{ opacity: 1 }} />
                 </form>
 

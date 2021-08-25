@@ -100,6 +100,10 @@
     background-image: url("../images/IMG_0126.PNG");
     background-size: cover;
     height: 300px;
+
+  @media (max-width: 35em) {
+    height: 145px;
+  }
   }
 
 .spacerOverlay  {
@@ -112,4 +116,10 @@
   font-size: 80px;
   color:#5cd1c1;
   -webkit-text-stroke: 5px #5cd1c1;
+  letter-spacing: 5px;
+
+  @media (max-width: 35em) {
+    font-size: 55px;
+    -webkit-text-stroke: 3px #5cd1c1;
+  }
 }

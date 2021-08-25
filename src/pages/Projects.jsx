@@ -2,7 +2,10 @@ import React from "react"
 import ProjectsImage from "../components/ProjectsImage"
 export function Projects() {
     return (
-        <div className="homeClass projectMain"><p className="projectTitle">Projects</p>
+        <div className="homeClass projectMain">
+            <section className="homeSpacer">
+                <div className="spacerOverlay"><p data-aos="fade-up">Projects</p></div>
+            </section>
             <ProjectsImage />
             <div>
                 <p className="projectTitle removeMarginTop">Sites</p>

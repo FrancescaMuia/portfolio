@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 import { ReactComponent as InstagramLogo } from "../icons/instagram.svg"
 import { ReactComponent as LinkedinLogo } from "../icons/linkedin.svg"
 import { ReactComponent as BehanceLogo } from "../icons/behance.svg"
-import logo from "../images/Logo_orizzontale.png"
+import logo from "../images/Logo-FM-sito.png"
 export function Navbar() {
     return (
-        <header className="navHeader" style={{ backgroundColor: "#fffaf2", zIndex: 1000, width: "100%" }}>
+        <header className="navHeader" style={{ zIndex: 1000, width: "100%" }}>
             <div className="mx-auto flex justify-between align-center">
                 {/* <div className="container flex justify-between logoContainer" >
                     <a href="https://www.instagram.com/effeemme_art/"

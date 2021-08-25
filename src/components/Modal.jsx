@@ -123,7 +123,7 @@ export default class Modal extends React.Component {
                 <img id="target" className="galleryImage" data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
                     data-aos-delay="300"
-                    data-aos-offset="0" src={imgs[this.state.bool === false ? this.props.start : pointer]} style={{ width: "35%" }} onClick={() => {
+                    data-aos-offset="0" src={imgs[this.state.bool === false ? this.props.start : pointer]} style={{ height: "90%" }} onClick={() => {
                         this.clicked(false);
 
                         this.props.onClose();
