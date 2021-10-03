@@ -31,7 +31,7 @@ export default class Home extends Component {
 
 
                     <p className="homeParagraph"><p className="homeTitle">Hello!</p>
-                        I'm Francesca, a freelance illustrator and graphic designer based in Italy.
+                        I'm Francesca, a freelance illustrator and web designer based in Italy.
                     </p>
 
                 </section>
