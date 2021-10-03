@@ -12,7 +12,7 @@ export function About() {
                     <img style={{ width: "100%" }} src={profilo} />
                 </div>
                 <div style={{ width: "49%", borderStyle: "solid", borderWidth: "3px", marginLeft: "30px" }}>
-                    ciao
+                    Hello! This section is under construction.
                 </div>
             </div>
         </main>

@@ -135,12 +135,26 @@ nav {
     will-change: transform;
     transition: transform .5s $timing-function;
 
-    @media(min-width: 45em) {
-      width: $nav-width-desktop;
+    @media(max-width: 35em) {
+      width: 100%;
+      left: 0;
+      transform: unset;
+      transform-origin: unset;
+      will-change: unset;
+      transition: unset;
+      display: flex;
+      align-items: center;
     }
 
     @media(max-width: 25em) {
-      width: $nav-width-mobile;
+      width: 100%;
+      left: 0;
+      transform: unset;
+      transform-origin: unset;
+      will-change: unset;
+      transition: unset;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -199,6 +213,28 @@ main {
     &::before {
       opacity: 1;
       pointer-events: auto;
+
+      @media(max-width: 35em) {
+        width: 100%;
+        left: 0;
+        transform: unset;
+        transform-origin: unset;
+        will-change: unset;
+        transition: unset;
+        display: flex;
+        align-items: center;
+      }
+  
+      @media(max-width: 25em) {
+        width: 100%;
+        left: 0;
+        transform: unset;
+        transform-origin: unset;
+        will-change: unset;
+        transition: unset;
+        display: flex;
+        align-items: center;
+      }
     }
 
     .burger {
@@ -207,8 +243,8 @@ main {
       &::after {
         width: 141.42%; // Pythagore!
         @media (max-width: 375px) {
-          width: 121.42%;
-        margin-right: 30px;}
+          width: 100%;
+        }
       }
 
       &::before {
@@ -219,6 +255,10 @@ main {
     left: 95%;
     width: 3px;
     height: 30px;
+@media (max-width: 35em){
+  left: 90%;
+}
+    
 
       }
 
@@ -230,7 +270,9 @@ main {
     left: 95%;
     width: 3px;
     height: 30px;
-
+    @media (max-width: 35em){
+      left: 90%;
+    }
       }
 
       .bar {
@@ -242,12 +284,34 @@ main {
 
   &~nav {
     transform: translateX(0);
+    @media(max-width: 35em) {
+      width: 100%;
+      left: 0;
+      transform: unset;
+      transform-origin: unset;
+      will-change: unset;
+      transition: unset;
+      display: flex;
+      align-items: center;
+    }
 
+    @media(max-width: 25em) {
+      width: 100%;
+      left: 0;
+      transform: unset;
+      transform-origin: unset;
+      will-change: unset;
+      transition: unset;
+      display: flex;
+      align-items: center;
+    }
 
     &::before {
       transform: skewX(-15deg) translateX(-120%);
       display: block;
       width: 300%;
+
+      
 
       @media (min-width: 1366px) and (min-height: 1024px){
       transform: skewX(
@@ -263,9 +327,27 @@ main {
         }
       
 
-      @media(max-width:"35em") {
-        width: 500%;
-      }
+        @media(max-width: 35em) {
+          width: 100%;
+          left: 0;
+          transform: unset;
+          transform-origin: unset;
+          will-change: unset;
+          transition: unset;
+          display: flex;
+          align-items: center;
+        }
+    
+        @media(max-width: 25em) {
+          width: 100%;
+          left: 0;
+          transform: unset;
+          transform-origin: unset;
+          will-change: unset;
+          transition: unset;
+          display: flex;
+          align-items: center;
+        }
 
       
       
@@ -279,13 +361,16 @@ main {
       margin-left: clamp(-150px, -100%, -175px);
 
       @media(max-width: 35em) {
-        margin-left: clamp(-200px, -132%, -225px);
+        margin-left: 0;
+        transform: unset;
       }
       @media (max-width: 360px){
-    margin-left: clamp(-180px, -132%, -225px);
+    margin-left: 0;
+    transform: unset;
 }
  @media (max-width: 320px) {
-          margin-left: clamp(-160px, -132%, -225px);
+          margin-left: 0;
+          transform: unset;
       }
       
       }
@@ -418,7 +503,7 @@ margin-top: clamp(-1px, -3%, -7px);
     margin-top: 30%;
 
     @media (max-width: 35em) {
-      margin-left: clamp(-250px, -100%, -275px);
+      margin-left: 0;
     }
     
 }
